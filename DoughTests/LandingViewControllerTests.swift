@@ -10,7 +10,7 @@ import Nimble
 import Quick
 @testable import Dough
 
-class LandingViewControllerTests: QuickSpec {
+class LandingViewControllerTests: DoughTests {
     
     override func spec() {
         super.spec()

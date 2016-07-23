@@ -9,6 +9,9 @@
 /* Begin PBXBuildFile section */
 		A22296CB1D4414FC0081CC14 /* Quick.framework in CopyFiles */ = {isa = PBXBuildFile; fileRef = A2FFC3171D4412810035065F /* Quick.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		A22296CC1D4414FC0081CC14 /* Nimble.framework in CopyFiles */ = {isa = PBXBuildFile; fileRef = A2FFC3151D44127B0035065F /* Nimble.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		A22296D31D441EC90081CC14 /* SignInViewControllerTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = A22296D21D441EC90081CC14 /* SignInViewControllerTests.swift */; };
+		A22296D81D441FFD0081CC14 /* SignInViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A22296D71D441FFD0081CC14 /* SignInViewController.swift */; };
+		A22296DA1D4420A20081CC14 /* SignIn.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A22296D91D4420A20081CC14 /* SignIn.storyboard */; };
 		A2DA4A4B1D440984002961C7 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A2DA4A4A1D440984002961C7 /* AppDelegate.swift */; };
 		A2DA4A4D1D440984002961C7 /* LandingViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A2DA4A4C1D440984002961C7 /* LandingViewController.swift */; };
 		A2DA4A521D440984002961C7 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A2DA4A511D440984002961C7 /* Assets.xcassets */; };
@@ -53,6 +56,9 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
+		A22296D21D441EC90081CC14 /* SignInViewControllerTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SignInViewControllerTests.swift; sourceTree = "<group>"; };
+		A22296D71D441FFD0081CC14 /* SignInViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SignInViewController.swift; sourceTree = "<group>"; };
+		A22296D91D4420A20081CC14 /* SignIn.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = SignIn.storyboard; sourceTree = "<group>"; };
 		A2DA4A471D440984002961C7 /* Dough.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Dough.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		A2DA4A4A1D440984002961C7 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		A2DA4A4C1D440984002961C7 /* LandingViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LandingViewController.swift; sourceTree = "<group>"; };
@@ -101,6 +107,7 @@
 		A22296CD1D441CF50081CC14 /* Controllers */ = {
 			isa = PBXGroup;
 			children = (
+				A22296D41D441FDD0081CC14 /* Sign In */,
 				A2E2BDFB1D440BB600C6CBB1 /* Landing */,
 			);
 			name = Controllers;
@@ -111,6 +118,32 @@
 			children = (
 			);
 			name = Services;
+			sourceTree = "<group>";
+		};
+		A22296D01D441EA80081CC14 /* Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				A22296D11D441EAF0081CC14 /* Sign In */,
+				A2E2BDFC1D440BD200C6CBB1 /* Landing */,
+			);
+			name = Controllers;
+			sourceTree = "<group>";
+		};
+		A22296D11D441EAF0081CC14 /* Sign In */ = {
+			isa = PBXGroup;
+			children = (
+				A22296D21D441EC90081CC14 /* SignInViewControllerTests.swift */,
+			);
+			name = "Sign In";
+			sourceTree = "<group>";
+		};
+		A22296D41D441FDD0081CC14 /* Sign In */ = {
+			isa = PBXGroup;
+			children = (
+				A22296D71D441FFD0081CC14 /* SignInViewController.swift */,
+				A22296D91D4420A20081CC14 /* SignIn.storyboard */,
+			);
+			name = "Sign In";
 			sourceTree = "<group>";
 		};
 		A2DA4A3E1D440984002961C7 = {
@@ -149,8 +182,8 @@
 		A2DA4A5E1D440984002961C7 /* DoughTests */ = {
 			isa = PBXGroup;
 			children = (
+				A22296D01D441EA80081CC14 /* Controllers */,
 				A2FFC3141D44126F0035065F /* Frameworks */,
-				A2E2BDFC1D440BD200C6CBB1 /* Landing */,
 				A2DA4A5F1D440984002961C7 /* DoughTests.swift */,
 				A2DA4A611D440984002961C7 /* Info.plist */,
 			);
@@ -297,6 +330,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				A22296DA1D4420A20081CC14 /* SignIn.storyboard in Resources */,
 				A2FFC31A1D4412C60035065F /* Landing.storyboard in Resources */,
 				A2DA4A551D440984002961C7 /* LaunchScreen.storyboard in Resources */,
 				A2DA4A521D440984002961C7 /* Assets.xcassets in Resources */,
@@ -326,6 +360,7 @@
 			files = (
 				A2DA4A4D1D440984002961C7 /* LandingViewController.swift in Sources */,
 				A2DA4A4B1D440984002961C7 /* AppDelegate.swift in Sources */,
+				A22296D81D441FFD0081CC14 /* SignInViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -335,6 +370,7 @@
 			files = (
 				A2E2BDFE1D440BE700C6CBB1 /* LandingViewControllerTests.swift in Sources */,
 				A2DA4A601D440984002961C7 /* DoughTests.swift in Sources */,
+				A22296D31D441EC90081CC14 /* SignInViewControllerTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

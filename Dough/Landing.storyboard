@@ -22,6 +22,7 @@
                                 <state key="normal" title="Sign In"/>
                                 <connections>
                                     <action selector="signInButtonTapped:" destination="rS7-7h-94Q" eventType="touchUpInside" id="kpu-Cf-hBQ"/>
+                                    <segue destination="DBp-FR-CD0" kind="show" identifier="SignIn" id="54o-YA-Rfl"/>
                                 </connections>
                             </button>
                         </subviews>
@@ -35,6 +36,14 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="ILF-Di-g5W" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="147" y="220"/>
+        </scene>
+        <!--SignIn-->
+        <scene sceneID="7n3-C1-4Xu">
+            <objects>
+                <viewControllerPlaceholder storyboardName="SignIn" id="DBp-FR-CD0" sceneMemberID="viewController"/>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Yt0-gN-uZ1" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="783" y="181"/>
         </scene>
     </scenes>
 </document>
