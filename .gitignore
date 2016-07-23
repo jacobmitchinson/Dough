@@ -31,7 +31,7 @@ xcuserdata/
 # Carthage/Checkouts
 
 Carthage
-Carthfile.resolved
+Cartfile.resolved
 
 # fastlane
 #
