@@ -14,6 +14,7 @@
 		A2DA4A551D440984002961C7 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A2DA4A531D440984002961C7 /* LaunchScreen.storyboard */; };
 		A2DA4A601D440984002961C7 /* DoughTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = A2DA4A5F1D440984002961C7 /* DoughTests.swift */; };
 		A2DA4A6B1D440984002961C7 /* DoughUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = A2DA4A6A1D440984002961C7 /* DoughUITests.swift */; };
+		A2E2BDFE1D440BE700C6CBB1 /* LandingViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A2E2BDFD1D440BE700C6CBB1 /* LandingViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -47,6 +48,7 @@
 		A2DA4A661D440984002961C7 /* DoughUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = DoughUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		A2DA4A6A1D440984002961C7 /* DoughUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DoughUITests.swift; sourceTree = "<group>"; };
 		A2DA4A6C1D440984002961C7 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		A2E2BDFD1D440BE700C6CBB1 /* LandingViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LandingViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -109,6 +111,7 @@
 		A2DA4A5E1D440984002961C7 /* DoughTests */ = {
 			isa = PBXGroup;
 			children = (
+				A2E2BDFC1D440BD200C6CBB1 /* Landing */,
 				A2DA4A5F1D440984002961C7 /* DoughTests.swift */,
 				A2DA4A611D440984002961C7 /* Info.plist */,
 			);
@@ -129,6 +132,14 @@
 			children = (
 				A2DA4A4C1D440984002961C7 /* LandingViewController.swift */,
 				A2DA4A4E1D440984002961C7 /* Landing.storyboard */,
+			);
+			name = Landing;
+			sourceTree = "<group>";
+		};
+		A2E2BDFC1D440BD200C6CBB1 /* Landing */ = {
+			isa = PBXGroup;
+			children = (
+				A2E2BDFD1D440BE700C6CBB1 /* LandingViewController.swift */,
 			);
 			name = Landing;
 			sourceTree = "<group>";
@@ -273,6 +284,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				A2E2BDFE1D440BE700C6CBB1 /* LandingViewController.swift in Sources */,
 				A2DA4A601D440984002961C7 /* DoughTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
