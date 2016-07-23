@@ -16,10 +16,6 @@ class LandingViewController: UIViewController {
         case signIn = "SignIn"
     }
 
-    override func viewDidLoad() {
-        super.viewDidLoad()
-    }
-
     @IBAction func signInButtonTapped(sender: AnyObject) {
         segueToSignInViewController()
     }
