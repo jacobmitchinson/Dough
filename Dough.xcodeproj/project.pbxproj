@@ -7,14 +7,18 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		A22296CB1D4414FC0081CC14 /* Quick.framework in CopyFiles */ = {isa = PBXBuildFile; fileRef = A2FFC3171D4412810035065F /* Quick.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		A22296CC1D4414FC0081CC14 /* Nimble.framework in CopyFiles */ = {isa = PBXBuildFile; fileRef = A2FFC3151D44127B0035065F /* Nimble.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		A2DA4A4B1D440984002961C7 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A2DA4A4A1D440984002961C7 /* AppDelegate.swift */; };
 		A2DA4A4D1D440984002961C7 /* LandingViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A2DA4A4C1D440984002961C7 /* LandingViewController.swift */; };
-		A2DA4A501D440984002961C7 /* Landing.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A2DA4A4E1D440984002961C7 /* Landing.storyboard */; };
 		A2DA4A521D440984002961C7 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A2DA4A511D440984002961C7 /* Assets.xcassets */; };
 		A2DA4A551D440984002961C7 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A2DA4A531D440984002961C7 /* LaunchScreen.storyboard */; };
 		A2DA4A601D440984002961C7 /* DoughTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = A2DA4A5F1D440984002961C7 /* DoughTests.swift */; };
 		A2DA4A6B1D440984002961C7 /* DoughUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = A2DA4A6A1D440984002961C7 /* DoughUITests.swift */; };
-		A2E2BDFE1D440BE700C6CBB1 /* LandingViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A2E2BDFD1D440BE700C6CBB1 /* LandingViewController.swift */; };
+		A2E2BDFE1D440BE700C6CBB1 /* LandingViewControllerTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = A2E2BDFD1D440BE700C6CBB1 /* LandingViewControllerTests.swift */; };
+		A2FFC3161D44127B0035065F /* Nimble.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A2FFC3151D44127B0035065F /* Nimble.framework */; };
+		A2FFC3181D4412810035065F /* Quick.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A2FFC3171D4412810035065F /* Quick.framework */; };
+		A2FFC31A1D4412C60035065F /* Landing.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A2FFC3191D4412C60035065F /* Landing.storyboard */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -34,11 +38,24 @@
 		};
 /* End PBXContainerItemProxy section */
 
+/* Begin PBXCopyFilesBuildPhase section */
+		A22296CA1D4414EA0081CC14 /* CopyFiles */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+				A22296CB1D4414FC0081CC14 /* Quick.framework in CopyFiles */,
+				A22296CC1D4414FC0081CC14 /* Nimble.framework in CopyFiles */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
 /* Begin PBXFileReference section */
 		A2DA4A471D440984002961C7 /* Dough.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Dough.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		A2DA4A4A1D440984002961C7 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		A2DA4A4C1D440984002961C7 /* LandingViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LandingViewController.swift; sourceTree = "<group>"; };
-		A2DA4A4F1D440984002961C7 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Landing.storyboard; sourceTree = "<group>"; };
 		A2DA4A511D440984002961C7 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		A2DA4A541D440984002961C7 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		A2DA4A561D440984002961C7 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -48,7 +65,10 @@
 		A2DA4A661D440984002961C7 /* DoughUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = DoughUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		A2DA4A6A1D440984002961C7 /* DoughUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DoughUITests.swift; sourceTree = "<group>"; };
 		A2DA4A6C1D440984002961C7 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		A2E2BDFD1D440BE700C6CBB1 /* LandingViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LandingViewController.swift; sourceTree = "<group>"; };
+		A2E2BDFD1D440BE700C6CBB1 /* LandingViewControllerTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LandingViewControllerTests.swift; sourceTree = "<group>"; };
+		A2FFC3151D44127B0035065F /* Nimble.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Nimble.framework; path = Carthage/Build/iOS/Nimble.framework; sourceTree = SOURCE_ROOT; };
+		A2FFC3171D4412810035065F /* Quick.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Quick.framework; path = Carthage/Build/iOS/Quick.framework; sourceTree = SOURCE_ROOT; };
+		A2FFC3191D4412C60035065F /* Landing.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Landing.storyboard; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -63,6 +83,8 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				A2FFC3181D4412810035065F /* Quick.framework in Frameworks */,
+				A2FFC3161D44127B0035065F /* Nimble.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -111,6 +133,7 @@
 		A2DA4A5E1D440984002961C7 /* DoughTests */ = {
 			isa = PBXGroup;
 			children = (
+				A2FFC3141D44126F0035065F /* Frameworks */,
 				A2E2BDFC1D440BD200C6CBB1 /* Landing */,
 				A2DA4A5F1D440984002961C7 /* DoughTests.swift */,
 				A2DA4A611D440984002961C7 /* Info.plist */,
@@ -131,7 +154,7 @@
 			isa = PBXGroup;
 			children = (
 				A2DA4A4C1D440984002961C7 /* LandingViewController.swift */,
-				A2DA4A4E1D440984002961C7 /* Landing.storyboard */,
+				A2FFC3191D4412C60035065F /* Landing.storyboard */,
 			);
 			name = Landing;
 			sourceTree = "<group>";
@@ -139,9 +162,18 @@
 		A2E2BDFC1D440BD200C6CBB1 /* Landing */ = {
 			isa = PBXGroup;
 			children = (
-				A2E2BDFD1D440BE700C6CBB1 /* LandingViewController.swift */,
+				A2E2BDFD1D440BE700C6CBB1 /* LandingViewControllerTests.swift */,
 			);
 			name = Landing;
+			sourceTree = "<group>";
+		};
+		A2FFC3141D44126F0035065F /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				A2FFC3171D4412810035065F /* Quick.framework */,
+				A2FFC3151D44127B0035065F /* Nimble.framework */,
+			);
+			name = Frameworks;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -171,6 +203,7 @@
 				A2DA4A571D440984002961C7 /* Sources */,
 				A2DA4A581D440984002961C7 /* Frameworks */,
 				A2DA4A591D440984002961C7 /* Resources */,
+				A22296CA1D4414EA0081CC14 /* CopyFiles */,
 			);
 			buildRules = (
 			);
@@ -248,9 +281,9 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				A2FFC31A1D4412C60035065F /* Landing.storyboard in Resources */,
 				A2DA4A551D440984002961C7 /* LaunchScreen.storyboard in Resources */,
 				A2DA4A521D440984002961C7 /* Assets.xcassets in Resources */,
-				A2DA4A501D440984002961C7 /* Landing.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -284,7 +317,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				A2E2BDFE1D440BE700C6CBB1 /* LandingViewController.swift in Sources */,
+				A2E2BDFE1D440BE700C6CBB1 /* LandingViewControllerTests.swift in Sources */,
 				A2DA4A601D440984002961C7 /* DoughTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -313,14 +346,6 @@
 /* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
-		A2DA4A4E1D440984002961C7 /* Landing.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				A2DA4A4F1D440984002961C7 /* Base */,
-			);
-			name = Landing.storyboard;
-			sourceTree = "<group>";
-		};
 		A2DA4A531D440984002961C7 /* LaunchScreen.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
@@ -419,6 +444,10 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/Carthage/Build/iOS",
+				);
 				INFOPLIST_FILE = Dough/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.JM.Dough.Dough;
@@ -430,6 +459,10 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/Carthage/Build/iOS",
+				);
 				INFOPLIST_FILE = Dough/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.JM.Dough.Dough;
@@ -441,6 +474,10 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				BUNDLE_LOADER = "$(TEST_HOST)";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/Carthage/Build/iOS",
+				);
 				INFOPLIST_FILE = DoughTests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.JM.Dough.DoughTests;
@@ -453,6 +490,10 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				BUNDLE_LOADER = "$(TEST_HOST)";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/Carthage/Build/iOS",
+				);
 				INFOPLIST_FILE = DoughTests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.JM.Dough.DoughTests;

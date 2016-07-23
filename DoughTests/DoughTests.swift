@@ -6,7 +6,8 @@
 //  Copyright © 2016 Dough. All rights reserved.
 //
 
-import XCTest
+import Nimble
+import Quick
 @testable import Dough
 
 class DoughTests: XCTestCase {

@@ -9,17 +9,23 @@
 import UIKit
 
 class LandingViewController: UIViewController {
+    
+    @IBOutlet weak var signInButton: UIButton!
+    
+    private enum LandingViewControllerSegues:String {
+        case signIn = "SignIn"
+    }
 
     override func viewDidLoad() {
         super.viewDidLoad()
-        // Do any additional setup after loading the view, typically from a nib.
     }
 
-    override func didReceiveMemoryWarning() {
-        super.didReceiveMemoryWarning()
-        // Dispose of any resources that can be recreated.
+    @IBAction func signInButtonTapped(sender: AnyObject) {
+        segueToSignInViewController()
     }
-
-
+    
+    func segueToSignInViewController() {
+        performSegueWithIdentifier(LandingViewControllerSegues.signIn.rawValue, sender: self)
+    }
 }
 
