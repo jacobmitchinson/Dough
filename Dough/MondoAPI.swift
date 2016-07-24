@@ -15,8 +15,7 @@ enum MondoResult {
 
 struct MondoAPI {
     
-    func presentAuthViewController(completion: (MondoResult) -> Void) {
-        
-    }
+
     
 }
+

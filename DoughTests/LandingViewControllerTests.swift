@@ -24,25 +24,46 @@ class LandingViewControllerTests: DoughTests {
         }
         
         context("sign in") {
-            it("should have button") {
-                expect(viewController.signInButton).toNot(beNil())
-            }
             
-            it("button tapped should segue to sign in view controller") {
-                class LandingMock:LandingViewController {
-                    var savedSegue:String?
-                    
-                    override func performSegueWithIdentifier(identifier: String, sender: AnyObject?) {
-                        savedSegue = identifier
+            it("button tapped should present mondo login web view") {
+                
+                class MockPresenter: AuthPresenter {
+                    var presentingViewController:UIViewController!
+                    func present(onTopOf presenter: UIViewController, completion: (MondoResult) -> Void) {
+                        presentingViewController = presenter
                     }
                 }
                 
-                let viewController = LandingMock()
                 let button = UIButton()
+                let presenter = MockPresenter()
+                viewController.presenter = presenter
                 viewController.signInButtonTapped(button)
-                expect(viewController.savedSegue).to(equal("SignIn"))
+                expect(presenter.presentingViewController.isKindOfClass(LandingViewController)).to(beTrue())
+            }
+            
+            describe("success") {
+                it("should segue to start game") {
+                    class MockPresenter: AuthPresenter {
+                        func present(onTopOf presenter: UIViewController, completion: (MondoResult) -> Void) {
+                            completion(.Success(""))
+                        }
+                    }
+                    
+                    class MockViewController: LandingViewController {
+                        var segueToPerform: String!
+                        override func performSegueWithIdentifier(identifier: String, sender: AnyObject?) {
+                            segueToPerform = identifier
+                        }
+                    }
+                    
+                    let button = UIButton()
+                    let presenter = MockPresenter()
+                    let viewController = MockViewController()
+                    viewController.presenter = presenter
+                    viewController.signInButtonTapped(button)
+                expect(viewController.segueToPerform).to(equal("StartGameSegue"))
+                }
             }
         }
-        
     }
 }

@@ -22,7 +22,6 @@
                                 <state key="normal" title="Sign In To Mondo"/>
                                 <connections>
                                     <action selector="signInButtonTapped:" destination="rS7-7h-94Q" eventType="touchUpInside" id="kpu-Cf-hBQ"/>
-                                    <segue destination="DBp-FR-CD0" kind="show" identifier="SignIn" id="54o-YA-Rfl"/>
                                 </connections>
                             </button>
                         </subviews>
