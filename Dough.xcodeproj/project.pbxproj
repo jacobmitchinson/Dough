@@ -16,6 +16,7 @@
 		A22296DF1D442B870081CC14 /* MondoAPITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = A22296DE1D442B870081CC14 /* MondoAPITests.swift */; };
 		A22296E21D44CB170081CC14 /* OAuthViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A22296E11D44CB170081CC14 /* OAuthViewController.swift */; };
 		A22296E41D44CD5D0081CC14 /* Secrets.swift in Sources */ = {isa = PBXBuildFile; fileRef = A22296E31D44CD5D0081CC14 /* Secrets.swift */; };
+		A22296E71D44CF850081CC14 /* SecretsTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = A22296E61D44CF850081CC14 /* SecretsTests.swift */; };
 		A2DA4A4B1D440984002961C7 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A2DA4A4A1D440984002961C7 /* AppDelegate.swift */; };
 		A2DA4A4D1D440984002961C7 /* LandingViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A2DA4A4C1D440984002961C7 /* LandingViewController.swift */; };
 		A2DA4A521D440984002961C7 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A2DA4A511D440984002961C7 /* Assets.xcassets */; };
@@ -67,6 +68,7 @@
 		A22296DE1D442B870081CC14 /* MondoAPITests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MondoAPITests.swift; sourceTree = "<group>"; };
 		A22296E11D44CB170081CC14 /* OAuthViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = OAuthViewController.swift; sourceTree = "<group>"; };
 		A22296E31D44CD5D0081CC14 /* Secrets.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Secrets.swift; sourceTree = "<group>"; };
+		A22296E61D44CF850081CC14 /* SecretsTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SecretsTests.swift; sourceTree = "<group>"; };
 		A2DA4A471D440984002961C7 /* Dough.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Dough.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		A2DA4A4A1D440984002961C7 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		A2DA4A4C1D440984002961C7 /* LandingViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LandingViewController.swift; sourceTree = "<group>"; };
@@ -164,6 +166,14 @@
 			name = Services;
 			sourceTree = "<group>";
 		};
+		A22296E51D44CF6C0081CC14 /* Config */ = {
+			isa = PBXGroup;
+			children = (
+				A22296E61D44CF850081CC14 /* SecretsTests.swift */,
+			);
+			name = Config;
+			sourceTree = "<group>";
+		};
 		A2DA4A3E1D440984002961C7 = {
 			isa = PBXGroup;
 			children = (
@@ -201,6 +211,7 @@
 		A2DA4A5E1D440984002961C7 /* DoughTests */ = {
 			isa = PBXGroup;
 			children = (
+				A22296E51D44CF6C0081CC14 /* Config */,
 				A22296DD1D442B430081CC14 /* Services */,
 				A22296D01D441EA80081CC14 /* Controllers */,
 				A2FFC3141D44126F0035065F /* Frameworks */,
@@ -395,6 +406,7 @@
 				A2E2BDFE1D440BE700C6CBB1 /* LandingViewControllerTests.swift in Sources */,
 				A2DA4A601D440984002961C7 /* DoughTests.swift in Sources */,
 				A22296D31D441EC90081CC14 /* SignInViewControllerTests.swift in Sources */,
+				A22296E71D44CF850081CC14 /* SecretsTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
