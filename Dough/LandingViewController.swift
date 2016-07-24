@@ -17,11 +17,11 @@ class LandingViewController: UIViewController {
     }
 
     @IBAction func signInButtonTapped(sender: AnyObject) {
-        segueToSignInViewController()
+        signIn()
     }
     
-    func segueToSignInViewController() {
-        performSegueWithIdentifier(LandingViewControllerSegues.signIn.rawValue, sender: self)
+    func signIn() {
+        
     }
 }
 

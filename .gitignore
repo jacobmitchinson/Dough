@@ -42,3 +42,7 @@ Cartfile.resolved
 
 fastlane/report.xml
 fastlane/screenshots
+
+#Ignore mondo secrets
+
+Dough/Secrets.swift
