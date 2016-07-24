@@ -17,6 +17,13 @@
 		A22296E21D44CB170081CC14 /* OAuthViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A22296E11D44CB170081CC14 /* OAuthViewController.swift */; };
 		A22296E41D44CD5D0081CC14 /* Secrets.swift in Sources */ = {isa = PBXBuildFile; fileRef = A22296E31D44CD5D0081CC14 /* Secrets.swift */; };
 		A22296E71D44CF850081CC14 /* SecretsTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = A22296E61D44CF850081CC14 /* SecretsTests.swift */; };
+		A22296EA1D44D9830081CC14 /* AuthPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = A22296E91D44D9830081CC14 /* AuthPresenter.swift */; };
+		A22296ED1D44DA650081CC14 /* AuthTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = A22296EC1D44DA650081CC14 /* AuthTests.swift */; };
+		A22296EF1D44EBC60081CC14 /* OAuthViewControllerTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = A22296EE1D44EBC60081CC14 /* OAuthViewControllerTests.swift */; };
+		A22296F11D44F5B10081CC14 /* Router.swift in Sources */ = {isa = PBXBuildFile; fileRef = A22296F01D44F5B10081CC14 /* Router.swift */; };
+		A22296F31D44F5C40081CC14 /* RouterTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = A22296F21D44F5C40081CC14 /* RouterTests.swift */; };
+		A22296FD1D4531730081CC14 /* AuthData.swift in Sources */ = {isa = PBXBuildFile; fileRef = A22296FC1D4531730081CC14 /* AuthData.swift */; };
+		A22296FF1D4531800081CC14 /* AuthData.swift in Sources */ = {isa = PBXBuildFile; fileRef = A22296FE1D4531800081CC14 /* AuthData.swift */; };
 		A2DA4A4B1D440984002961C7 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A2DA4A4A1D440984002961C7 /* AppDelegate.swift */; };
 		A2DA4A4D1D440984002961C7 /* LandingViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A2DA4A4C1D440984002961C7 /* LandingViewController.swift */; };
 		A2DA4A521D440984002961C7 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A2DA4A511D440984002961C7 /* Assets.xcassets */; };
@@ -69,6 +76,13 @@
 		A22296E11D44CB170081CC14 /* OAuthViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = OAuthViewController.swift; sourceTree = "<group>"; };
 		A22296E31D44CD5D0081CC14 /* Secrets.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Secrets.swift; sourceTree = "<group>"; };
 		A22296E61D44CF850081CC14 /* SecretsTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SecretsTests.swift; sourceTree = "<group>"; };
+		A22296E91D44D9830081CC14 /* AuthPresenter.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AuthPresenter.swift; sourceTree = "<group>"; };
+		A22296EC1D44DA650081CC14 /* AuthTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AuthTests.swift; sourceTree = "<group>"; };
+		A22296EE1D44EBC60081CC14 /* OAuthViewControllerTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = OAuthViewControllerTests.swift; sourceTree = "<group>"; };
+		A22296F01D44F5B10081CC14 /* Router.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Router.swift; sourceTree = "<group>"; };
+		A22296F21D44F5C40081CC14 /* RouterTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RouterTests.swift; sourceTree = "<group>"; };
+		A22296FC1D4531730081CC14 /* AuthData.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AuthData.swift; sourceTree = "<group>"; };
+		A22296FE1D4531800081CC14 /* AuthData.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AuthData.swift; sourceTree = "<group>"; };
 		A2DA4A471D440984002961C7 /* Dough.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Dough.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		A2DA4A4A1D440984002961C7 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		A2DA4A4C1D440984002961C7 /* LandingViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LandingViewController.swift; sourceTree = "<group>"; };
@@ -126,7 +140,9 @@
 		A22296CF1D441D330081CC14 /* Services */ = {
 			isa = PBXGroup;
 			children = (
+				A22296E81D44D9320081CC14 /* Sign In */,
 				A22296DB1D442A610081CC14 /* MondoAPI.swift */,
+				A22296F01D44F5B10081CC14 /* Router.swift */,
 			);
 			name = Services;
 			sourceTree = "<group>";
@@ -144,6 +160,7 @@
 			isa = PBXGroup;
 			children = (
 				A22296D21D441EC90081CC14 /* SignInViewControllerTests.swift */,
+				A22296EE1D44EBC60081CC14 /* OAuthViewControllerTests.swift */,
 			);
 			name = "Sign In";
 			sourceTree = "<group>";
@@ -161,7 +178,9 @@
 		A22296DD1D442B430081CC14 /* Services */ = {
 			isa = PBXGroup;
 			children = (
+				A22296EB1D44DA4E0081CC14 /* Sign In */,
 				A22296DE1D442B870081CC14 /* MondoAPITests.swift */,
+				A22296F21D44F5C40081CC14 /* RouterTests.swift */,
 			);
 			name = Services;
 			sourceTree = "<group>";
@@ -172,6 +191,24 @@
 				A22296E61D44CF850081CC14 /* SecretsTests.swift */,
 			);
 			name = Config;
+			sourceTree = "<group>";
+		};
+		A22296E81D44D9320081CC14 /* Sign In */ = {
+			isa = PBXGroup;
+			children = (
+				A22296E91D44D9830081CC14 /* AuthPresenter.swift */,
+				A22296FC1D4531730081CC14 /* AuthData.swift */,
+			);
+			name = "Sign In";
+			sourceTree = "<group>";
+		};
+		A22296EB1D44DA4E0081CC14 /* Sign In */ = {
+			isa = PBXGroup;
+			children = (
+				A22296EC1D44DA650081CC14 /* AuthTests.swift */,
+				A22296FE1D4531800081CC14 /* AuthData.swift */,
+			);
+			name = "Sign In";
 			sourceTree = "<group>";
 		};
 		A2DA4A3E1D440984002961C7 = {
@@ -389,8 +426,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				A22296F11D44F5B10081CC14 /* Router.swift in Sources */,
 				A22296DC1D442A610081CC14 /* MondoAPI.swift in Sources */,
+				A22296EA1D44D9830081CC14 /* AuthPresenter.swift in Sources */,
 				A22296E41D44CD5D0081CC14 /* Secrets.swift in Sources */,
+				A22296FD1D4531730081CC14 /* AuthData.swift in Sources */,
 				A2DA4A4D1D440984002961C7 /* LandingViewController.swift in Sources */,
 				A2DA4A4B1D440984002961C7 /* AppDelegate.swift in Sources */,
 				A22296D81D441FFD0081CC14 /* SignInViewController.swift in Sources */,
@@ -402,7 +442,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				A22296F31D44F5C40081CC14 /* RouterTests.swift in Sources */,
 				A22296DF1D442B870081CC14 /* MondoAPITests.swift in Sources */,
+				A22296ED1D44DA650081CC14 /* AuthTests.swift in Sources */,
+				A22296EF1D44EBC60081CC14 /* OAuthViewControllerTests.swift in Sources */,
+				A22296FF1D4531800081CC14 /* AuthData.swift in Sources */,
 				A2E2BDFE1D440BE700C6CBB1 /* LandingViewControllerTests.swift in Sources */,
 				A2DA4A601D440984002961C7 /* DoughTests.swift in Sources */,
 				A22296D31D441EC90081CC14 /* SignInViewControllerTests.swift in Sources */,

@@ -10,10 +10,13 @@ import UIKit
 
 class LandingViewController: UIViewController {
     
+    @IBOutlet weak var signInButton: UIButton!
+    @IBOutlet weak var enterAuthTokenTextField: UITextField!
     var presenter:AuthPresenter?
     
     private enum LandingPageSegues:String {
         case StartGame = "StartGameSegue"
+        case SignIn = "SignInSegue"
     }
     
     
@@ -22,17 +25,16 @@ class LandingViewController: UIViewController {
         presenter = Auth()
     }
     
-    @IBOutlet weak var signInButton: UIButton!
-    
     private enum LandingViewControllerSegues:String {
         case signIn = "SignIn"
     }
 
     @IBAction func signInButtonTapped(sender: AnyObject) {
-        signIn()
+        performSegueWithIdentifier(LandingPageSegues.SignIn.rawValue, sender: self)
     }
     
-    func signIn() {
+    // can't do this yet as will need to have to universal links :(
+    func signInViaOAuth() {
         presenter?.present(onTopOf: self) { [weak self] result in
             guard let strongSelf = self else {
                 return
@@ -47,4 +49,7 @@ class LandingViewController: UIViewController {
         }
     }
 }
+
+
+
 

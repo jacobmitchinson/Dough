@@ -10,10 +10,7 @@ import UIKit
 
 class SignInViewController: UIViewController {
 
-    @IBOutlet weak var usernameTextField: UITextField!
-    @IBOutlet weak var passwordTextField: UITextField!
-    var usernameEntered = false
-    var passwordEntered = false
+    @IBOutlet weak var authTokenTextField: UITextField!
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -21,8 +18,7 @@ class SignInViewController: UIViewController {
     }
     
     func setupDelegates() {
-        usernameTextField.delegate = self
-        passwordTextField.delegate = self
+        authTokenTextField.delegate = self
     }
     
     @IBAction func signInButtonTapped(sender: AnyObject) {
@@ -31,6 +27,16 @@ class SignInViewController: UIViewController {
 }
 
 extension SignInViewController: UITextFieldDelegate {
+    
+    @IBAction func didFinishEntering(sender: AnyObject) {
+        if
+            let textField = sender as? UITextField,
+                authToken = textField.text
+                where authToken.characters.count > 0 {
+            AuthData.authToken = authToken
+        }
+    }
+    
     func textFieldShouldReturn(textField: UITextField) -> Bool {
         textField.resignFirstResponder()
         return true

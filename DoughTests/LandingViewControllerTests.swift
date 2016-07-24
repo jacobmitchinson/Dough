@@ -23,10 +23,27 @@ class LandingViewControllerTests: DoughTests {
             _ = viewController.view
         }
         
+        
         context("sign in") {
-            
-            it("button tapped should present mondo login web view") {
+            it("should start game") {
+                class MockViewController: LandingViewController {
+                    var segueToPerform: String!
+                    override func performSegueWithIdentifier(identifier: String, sender: AnyObject?) {
+                        segueToPerform = identifier
+                    }
+                }
                 
+                let button = UIButton()
+                let viewController = MockViewController()
+                viewController.signInButtonTapped(button)
+            expect(viewController.segueToPerform).to(equal("SignInSegue"))
+            }
+        }
+        
+        pending("outh sign in") {
+            
+            it("button tapped should show mondo login") {
+            
                 class MockPresenter: AuthPresenter {
                     var presentingViewController:UIViewController!
                     func present(onTopOf presenter: UIViewController, completion: (MondoResult) -> Void) {
@@ -42,7 +59,7 @@ class LandingViewControllerTests: DoughTests {
             }
             
             describe("success") {
-                it("should segue to start game") {
+                it("should start game") {
                     class MockPresenter: AuthPresenter {
                         func present(onTopOf presenter: UIViewController, completion: (MondoResult) -> Void) {
                             completion(.Success(""))

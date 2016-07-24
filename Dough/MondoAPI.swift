@@ -14,8 +14,8 @@ enum MondoResult {
 }
 
 struct MondoAPI {
-    
-
-    
+    func authorizeFromCode(code : String, completion: (MondoResult) -> Void) {
+        // can't do this without universal links setup :(
+    }
 }
 

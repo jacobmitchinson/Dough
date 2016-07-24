@@ -15,6 +15,9 @@ class MondoAPITests: DoughTests {
     override func spec() {
         super.spec()
         
-
+        it("should create an auth header") {
+            
+        }
+        
     }
 }

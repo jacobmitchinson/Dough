@@ -21,7 +21,7 @@ class AuthTests: DoughTests {
                 expect(controller).toNot(beNil())
             }
             
-            it("should tell presenting view controller to present") {
+            it("should tell presenting mondo login screen") {
                 class MockViewController: UIViewController {
                     var viewControllerPresented:UIViewController!
                     override func presentViewController(viewControllerToPresent: UIViewController, animated flag: Bool, completion: (() -> Void)?) {

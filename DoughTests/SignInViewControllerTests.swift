@@ -24,16 +24,10 @@ class SignInViewControllerTests: DoughTests {
         }
         
         context("entering credentials") {
-            it("should be able to set username") {
-                let username = "jacob"
-                viewController.usernameTextField.text = username
-                expect(viewController.usernameTextField.text).to(equal(username))
-            }
-            
-            it("should be able to set password") {
-                let password = "supersecure"
-                viewController.passwordTextField.text = password
-                expect(viewController.passwordTextField.text).to(equal(password))
+            it("should be able to set auth token") {
+                let authToken = "authToken"
+                viewController.authTokenTextField.text = authToken
+                expect(viewController.authTokenTextField.text).to(equal(authToken))
             }
         }
     }

@@ -20,7 +20,9 @@ struct Auth: AuthPresenter {
     }
     
     func createAuthViewController(completion: (MondoResult) -> Void) -> OAuthViewController {
-        return OAuthViewController(completion: completion)
+        let webView = UIWebView()
+        let mondoAPI = MondoAPI()
+        return OAuthViewController(mondoAPI: mondoAPI, webViewToLoad: webView, completion: completion)
     }
     
 }
