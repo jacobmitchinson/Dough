@@ -62,7 +62,7 @@ extension OAuthViewController: UIWebViewDelegate {
             
             let queryParams = url.queryParams
             if let identitifer = queryParams["state"], code = queryParams["code"] where identitifer == identifier {
-                mondoAPI?.authorizeFromCode(code, completion: onCompletion)
+//                mondoAPI?.authorizeFromCode(code, completion: onCompletion)
                 return false
             }
         }

@@ -8,12 +8,19 @@
 
 import Foundation
 
+enum MondoEndPoints:String {
+    case transactions = "transactions"
+}
+
 struct Router {
     
+    // api 
+    static let APIRoot = "https://api.getmondo.co.uk/"
+    
+    // auth
     static let AuthRoot = "https://auth.getmondo.co.uk/"
     static let AuthRedirectScheme = "dough"
     static let AuthRedirectUri = AuthRedirectScheme + "://success"
-
     
     static func createLoginURL(identitifer:String, clientId: String) -> NSURL? {
         var url = Router.AuthRoot + "?client_id=" + clientId

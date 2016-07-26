@@ -19,5 +19,6 @@ class RouterTests: DoughTests {
             let url = Router.createLoginURL("1234", clientId: "1234")!
             expect(url.absoluteString).to(equal("\(Router.AuthRoot)?client_id=1234&redirect_uri=\(Router.AuthRedirectUri)&response_type=code&state=1234"))
         }
+
     }
 }

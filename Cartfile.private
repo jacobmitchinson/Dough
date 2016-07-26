@@ -1,2 +1,4 @@
 github "Quick/Quick"
 github "Quick/Nimble"
+github "Alamofire/Alamofire"
+github "AliSoftware/OHHTTPStubs"

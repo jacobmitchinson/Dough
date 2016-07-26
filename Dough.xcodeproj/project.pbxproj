@@ -7,6 +7,11 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		8238052C1D467B9900ADE89A /* OHHTTPStubs.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8238052B1D467B9900ADE89A /* OHHTTPStubs.framework */; };
+		8238052D1D467BA800ADE89A /* OHHTTPStubs.framework in CopyFiles */ = {isa = PBXBuildFile; fileRef = 8238052B1D467B9900ADE89A /* OHHTTPStubs.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		826B934F1D467153005963CA /* Alamofire.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 826B934E1D467153005963CA /* Alamofire.framework */; };
+		826B93511D46716D005963CA /* Alamofire.framework in CopyFiles */ = {isa = PBXBuildFile; fileRef = 826B934E1D467153005963CA /* Alamofire.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		826B93531D467583005963CA /* GlobalQueues.swift in Sources */ = {isa = PBXBuildFile; fileRef = 826B93521D467583005963CA /* GlobalQueues.swift */; };
 		A22296CB1D4414FC0081CC14 /* Quick.framework in CopyFiles */ = {isa = PBXBuildFile; fileRef = A2FFC3171D4412810035065F /* Quick.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		A22296CC1D4414FC0081CC14 /* Nimble.framework in CopyFiles */ = {isa = PBXBuildFile; fileRef = A2FFC3151D44127B0035065F /* Nimble.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		A22296D31D441EC90081CC14 /* SignInViewControllerTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = A22296D21D441EC90081CC14 /* SignInViewControllerTests.swift */; };
@@ -54,6 +59,16 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXCopyFilesBuildPhase section */
+		826B93501D467165005963CA /* CopyFiles */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 7;
+			files = (
+				826B93511D46716D005963CA /* Alamofire.framework in CopyFiles */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		A22296CA1D4414EA0081CC14 /* CopyFiles */ = {
 			isa = PBXCopyFilesBuildPhase;
 			buildActionMask = 2147483647;
@@ -62,12 +77,16 @@
 			files = (
 				A22296CB1D4414FC0081CC14 /* Quick.framework in CopyFiles */,
 				A22296CC1D4414FC0081CC14 /* Nimble.framework in CopyFiles */,
+				8238052D1D467BA800ADE89A /* OHHTTPStubs.framework in CopyFiles */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
+		8238052B1D467B9900ADE89A /* OHHTTPStubs.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = OHHTTPStubs.framework; path = Carthage/Build/iOS/OHHTTPStubs.framework; sourceTree = SOURCE_ROOT; };
+		826B934E1D467153005963CA /* Alamofire.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Alamofire.framework; path = Carthage/Build/iOS/Alamofire.framework; sourceTree = SOURCE_ROOT; };
+		826B93521D467583005963CA /* GlobalQueues.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GlobalQueues.swift; sourceTree = "<group>"; };
 		A22296D21D441EC90081CC14 /* SignInViewControllerTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SignInViewControllerTests.swift; sourceTree = "<group>"; };
 		A22296D71D441FFD0081CC14 /* SignInViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SignInViewController.swift; sourceTree = "<group>"; };
 		A22296D91D4420A20081CC14 /* SignIn.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = SignIn.storyboard; sourceTree = "<group>"; };
@@ -106,6 +125,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				826B934F1D467153005963CA /* Alamofire.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -113,6 +133,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				8238052C1D467B9900ADE89A /* OHHTTPStubs.framework in Frameworks */,
 				A2FFC3181D4412810035065F /* Quick.framework in Frameworks */,
 				A2FFC3161D44127B0035065F /* Nimble.framework in Frameworks */,
 			);
@@ -128,6 +149,22 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		826B934D1D467105005963CA /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				826B934E1D467153005963CA /* Alamofire.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		826B93541D467597005963CA /* Config */ = {
+			isa = PBXGroup;
+			children = (
+				826B93521D467583005963CA /* GlobalQueues.swift */,
+			);
+			name = Config;
+			sourceTree = "<group>";
+		};
 		A22296CD1D441CF50081CC14 /* Controllers */ = {
 			isa = PBXGroup;
 			children = (
@@ -234,6 +271,7 @@
 		A2DA4A491D440984002961C7 /* Dough */ = {
 			isa = PBXGroup;
 			children = (
+				826B93541D467597005963CA /* Config */,
 				A22296CF1D441D330081CC14 /* Services */,
 				A22296CD1D441CF50081CC14 /* Controllers */,
 				A2DA4A4A1D440984002961C7 /* AppDelegate.swift */,
@@ -241,6 +279,7 @@
 				A2DA4A531D440984002961C7 /* LaunchScreen.storyboard */,
 				A2DA4A561D440984002961C7 /* Info.plist */,
 				A22296E31D44CD5D0081CC14 /* Secrets.swift */,
+				826B934D1D467105005963CA /* Frameworks */,
 			);
 			path = Dough;
 			sourceTree = "<group>";
@@ -287,6 +326,7 @@
 		A2FFC3141D44126F0035065F /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				8238052B1D467B9900ADE89A /* OHHTTPStubs.framework */,
 				A2FFC3171D4412810035065F /* Quick.framework */,
 				A2FFC3151D44127B0035065F /* Nimble.framework */,
 			);
@@ -303,6 +343,7 @@
 				A2DA4A431D440984002961C7 /* Sources */,
 				A2DA4A441D440984002961C7 /* Frameworks */,
 				A2DA4A451D440984002961C7 /* Resources */,
+				826B93501D467165005963CA /* CopyFiles */,
 			);
 			buildRules = (
 			);
@@ -428,6 +469,7 @@
 			files = (
 				A22296F11D44F5B10081CC14 /* Router.swift in Sources */,
 				A22296DC1D442A610081CC14 /* MondoAPI.swift in Sources */,
+				826B93531D467583005963CA /* GlobalQueues.swift in Sources */,
 				A22296EA1D44D9830081CC14 /* AuthPresenter.swift in Sources */,
 				A22296E41D44CD5D0081CC14 /* Secrets.swift in Sources */,
 				A22296FD1D4531730081CC14 /* AuthData.swift in Sources */,
